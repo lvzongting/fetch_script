@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+#How to gen paper.key.list
+#lftp -c "open https://www.kdd.org/kdd2019/accepted-papers;ls" > paper.list
+#wget -i paper.list
+#grep 'dl.acm.org/authorize' * > paper.key.list
+
 import re
 import os
 from pathlib import Path
